@@ -3,15 +3,15 @@
 #### Table of Contents
 
 1. [Overview](#overview)
-2. [Module Description - What the module does and why it is useful](#module-description)
-3. [Setup - The basics of getting started with bash](#setup)
+2. [Module Description](#module-description)
+3. [Setup](#setup)
     * [What bash affects](#what-bash-affects)
     * [Setup requirements](#setup-requirements)
     * [Beginning with bash](#beginning-with-bash)
-4. [Usage - Configuration options and additional functionality](#usage)
-5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+4. [Usage](#usage)
+5. [Reference](#reference)
+5. [Limitations](#limitations)
+6. [Development](#development)
 
 ## Overview
 
