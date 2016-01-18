@@ -13,3 +13,4 @@ matrix:
     dist: trusty
     bundler_args:
     script: bundle exec rake metadata_lint
+
