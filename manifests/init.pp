@@ -7,8 +7,8 @@ class bash(
           ) inherits bash::params {
 
   Exec {
-		path => '/usr/sbin:/usr/bin:/sbin:/bin',
-	}
+    path => '/usr/sbin:/usr/bin:/sbin:/bin',
+  }
 
   package { 'bash':
     ensure => 'installed',
@@ -19,7 +19,7 @@ class bash(
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => template("bash/history.erb"),
+    content => template("${module_name}/history.erb"),
     require => Package['bash'],
   }
 
@@ -51,18 +51,18 @@ class bash(
         {
           exec {'dash false':
             command => 'echo "dash dash/sh boolean false" | debconf-set-selections',
-            notify => Exec['dash reconfigure'],
+            notify  => Exec['dash reconfigure'],
             require => Package[$bash::params::debconf],
-            unless => 'debconf-get-selections | grep dash | grep false',
+            unless  => 'debconf-get-selections | grep dash | grep false',
           }
         }
 
         if ! defined(Exec['dash reconfigure'])
         {
           exec {'dash reconfigure':
-            command => 'dpkg-reconfigure -p critical dash',
+            command     => 'dpkg-reconfigure -p critical dash',
             refreshonly => true,
-            require => Package[$bash::params::debconf],
+            require     => Package[$bash::params::debconf],
           }
         }
 
@@ -81,6 +81,7 @@ class bash(
 
       }
     }
+    default: { }
   }
 
 }

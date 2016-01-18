@@ -1,16 +1,16 @@
 class bash::params {
 
-	case $::osfamily
-	{
+  case $::osfamily
+  {
     'redhat':
     {
       #ok
     }
-		'Debian':
-		{
-			$debconf='debconf-utils'
-		}
-		default: { fail("Unsupported OS!")  }
-	}
+    'Debian':
+    {
+      $debconf='debconf-utils'
+    }
+    default: { fail('Unsupported OS!')  }
+  }
 
 }
