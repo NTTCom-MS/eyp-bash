@@ -1,5 +1,7 @@
 # bash
 
+**AtlasIT-AM/eyp-bash**: [![Build Status](https://travis-ci.org/AtlasIT-AM/eyp-bash.png?branch=master)](https://travis-ci.org/AtlasIT-AM/eyp-bash)
+
 #### Table of Contents
 
 1. [Overview](#overview)
