@@ -1,9 +1,9 @@
 class bash(
-            $default_sh=true,
-            $histtimeformat='%d%m%y %H%M%S -> ',
-            $histfilesize='1000000',
-            $histsize='1000000',
-            $histcontrol='ignoredups',
+            $default_sh     = true,
+            $histtimeformat = '%d%m%y %H%M%S -> ',
+            $histfilesize   = '1000000',
+            $histsize       = '1000000',
+            $histcontrol    = 'ignoredups',
           ) inherits bash::params {
 
   Exec {
