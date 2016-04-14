@@ -4,7 +4,7 @@ class bash::params {
   {
     'redhat':
     {
-      #ok
+      $debconf=undef
     }
     'Debian':
     {
