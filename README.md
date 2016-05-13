@@ -1,6 +1,6 @@
 # bash
 
-**AtlasIT-AM/eyp-bash**: [![Build Status](https://travis-ci.org/AtlasIT-AM/eyp-bash.png?branch=master)](https://travis-ci.org/AtlasIT-AM/eyp-bash)
+**NTTCom-MS/eyp-bash**: [![Build Status](https://travis-ci.org/NTTCom-MS/eyp-bash.png?branch=master)](https://travis-ci.org/NTTCom-MS/eyp-bash)
 
 #### Table of Contents
 
