@@ -69,6 +69,7 @@ Should work anywhere, tested on:
 * CentOS 6
 * CentOS 7
 * Ubuntu 14.04
+* SLES 11 SP3
 
 ## Development
 
