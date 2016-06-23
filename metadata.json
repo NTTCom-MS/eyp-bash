@@ -1,14 +1,15 @@
 {
   "name": "eyp-bash",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "eyp",
   "summary": "limited bash properties, manages default shell (/bin/sh)",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/NTTCom-MS/eyp-bash",
   "project_page": null,
-  "issues_url": null,
+  "issues_url": "https://github.com/NTTCom-MS/eyp-bash/issues",
   "dependencies": [
-    {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
+    {"name":"puppetlabs/concat","version_requirement":">= 1.2.3"}
   ],
   "operatingsystem_support": [
     {

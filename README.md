@@ -23,12 +23,12 @@ manages some bash dfault settings
 
 Manages the following default settings:
 
-HISTTIMEFORMAT
-HISTFILESIZE
-HISTSIZE
-HISTCONTROL
+* HISTTIMEFORMAT
+* HISTFILESIZE
+* HISTSIZE
+* HISTCONTROL
 
-Manages /bin/sh to point to /bin/bash
+Manages **/bin/sh** to point to **/bin/bash**
 
 ## Setup
 
