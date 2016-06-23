@@ -54,13 +54,23 @@ the fancy stuff with your module here.
 
 ## Reference
 
-### bash
+### classes
+
+#### bash
 
 * **default_sh**: Manage default shell (/bin/sh) default: true
 * **histtimeformat**: (default: '%d%m%y %H%M%S -> ')
 * **histfilesize**: (default: 1000000)
 * **histsize**: (default: 1000000)
 * **histcontrol**: (default: ignoredups)
+
+### defines
+
+#### bash::alias
+
+* **aliasname**: (default: resource's name)
+* **command**: command to aliase
+* **user**: optional, apply this alias just to a given user (default: undef)
 
 ## Limitations
 
