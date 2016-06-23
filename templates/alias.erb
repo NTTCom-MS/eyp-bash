@@ -1,0 +1,8 @@
+<% if defined?(@user) -%>
+if [ "$(id -un)" == "<%= @user %>" ];
+then
+<% end -%>
+<% if defined?(@user) %>  <% end %>alias <%= @aliasname %>="<%= @command %>"
+<% if defined?(@user) -%>
+fi
+<% end -%>
