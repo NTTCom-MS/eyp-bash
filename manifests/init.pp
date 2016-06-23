@@ -31,7 +31,7 @@ class bash(
     require => Package['bash'],
   }
 
-  concat::fragment { "/etc/profile.d/alias.sh ${name} ${aliasname} ${command} ${user}":
+  concat::fragment { "/etc/profile.d/alias.sh base":
     target  => '/etc/profile.d/alias.sh',
     content => "# alias bash\n\n# puppet managed file\n\n",
     order   => '00',
