@@ -49,7 +49,7 @@ class { 'bash': }
 
 ## Usage
 
-It is able to create both global aliases:
+It is able to create global aliases:
 
 ```puppet
 bash::alias { 'sl':
