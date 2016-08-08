@@ -49,8 +49,22 @@ class { 'bash': }
 
 ## Usage
 
-Put the classes, types, and resources for customizing, configuring, and doing
-the fancy stuff with your module here.
+It is able to create both global aliases:
+
+```puppet
+bash::alias { 'sl':
+  command => "ls",
+}
+```
+
+and per user alises:
+
+```puppet
+bash::alias { 'sl':
+  command => "ls",
+  user => 'jordi',
+}
+```
 
 ## Reference
 
