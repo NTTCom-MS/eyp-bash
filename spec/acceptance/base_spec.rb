@@ -41,7 +41,7 @@ describe 'bash class' do
       it { should be_file }
       its(:content) { should match 'puppet managed file' }
       its(:content) { should match 'alias sl="ls"' }
-      its(:content) { should match 'if [ "$(id -un)" == "root" ];' }
+      its(:content) { should match /if [ "$(id -un)" == "root" ];/ }
     end
 
     it "alias sl loaded" do
