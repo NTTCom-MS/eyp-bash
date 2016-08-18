@@ -11,6 +11,16 @@ describe 'bash class' do
       class { 'bash':
       }
 
+      bash::alias { 'sl':
+        command => "ls",
+        user => 'root',
+      }
+
+      bash::alias { 'ak':
+        command => "ls",
+        user => 'root',
+      }
+
       EOF
 
       # Run it twice and test for idempotency
@@ -27,5 +37,21 @@ describe 'bash class' do
       its(:content) { should match 'HISTCONTROL="ignoredups"' }
     end
 
+    describe file('/etc/profile.d/alias.sh') do
+      it { should be_file }
+      its(:content) { should match 'puppet managed file' }
+      its(:content) { should match 'alias sl="ls"' }
+      its(:content) { should match /if [ "$(id -un)" == "root" ];/ }
+    end
+
+    it "alias sl loaded" do
+      expect(shell("bash -c 'source /etc/profile.d/alias.sh; alias' | grep sl").exit_code).to be_zero
+    end
+
+    it "alias ak loaded" do
+      expect(shell("bash -c 'source /etc/profile.d/alias.sh; alias' | grep ak").exit_code).to be_zero
+    end
+
   end
+
 end
