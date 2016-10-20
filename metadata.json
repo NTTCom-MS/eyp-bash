@@ -1,6 +1,6 @@
 {
   "name": "eyp-bash",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "eyp",
   "summary": "limited bash properties, manages default shell (/bin/sh)",
   "license": "Apache-2.0",
