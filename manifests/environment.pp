@@ -1,8 +1,8 @@
-define bash::alias(
-                    $value,
-                    $envname=$name,
-                    $user=undef
-                  ) {
+define bash::environment(
+                          $value,
+                          $envname=$name,
+                          $user=undef
+                        ) {
   #
   concat::fragment { "/etc/profile.d/environment.sh ${name} ${envname} ${value} ${user}":
     target  => '/etc/profile.d/environment.sh',
