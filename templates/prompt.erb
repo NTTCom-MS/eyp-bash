@@ -1,0 +1,8 @@
+<% if defined?(@user) -%>
+if [ "$(id -un)" == "<%= @user %>" ];
+then
+<% end -%>
+<% if defined?(@user) %>  <% end %>export PS1="<%= @ps1 %>"
+<% if defined?(@user) -%>
+fi
+<% end -%>
