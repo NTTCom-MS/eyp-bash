@@ -34,7 +34,7 @@ class bash(
   concat::fragment { '/etc/profile.d/alias.sh base':
     target  => '/etc/profile.d/alias.sh',
     content => "# alias bash\n\n# puppet managed file\n\n",
-    order   => '00',
+    order   => '+00',
   }
 
   concat { '/etc/profile.d/environment.sh':
@@ -48,7 +48,7 @@ class bash(
   concat::fragment { '/etc/profile.d/environment.sh base':
     target  => '/etc/profile.d/environment.sh',
     content => "# environment variables bash\n\n# puppet managed file\n\n",
-    order   => '00',
+    order   => '+00',
   }
 
   case $::osfamily
