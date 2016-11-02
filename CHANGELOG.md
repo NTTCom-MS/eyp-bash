@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.9
+
+* added **order** variable to **bash::environment** and **bash::alias**
+
 ## 0.1.8
 
 * added **bash::environment** to be able to add environment variables
