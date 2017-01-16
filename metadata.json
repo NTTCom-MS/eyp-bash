@@ -1,6 +1,6 @@
 {
   "name": "eyp-bash",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "author": "eyp",
   "summary": "limited bash properties, manages default shell (/bin/sh)",
   "license": "Apache-2.0",
@@ -34,7 +34,7 @@
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "14.04" ]
+      "operatingsystemrelease": [ "14.04", "16.04" ]
     },
     {
       "operatingsystem": "SLES",
