@@ -67,6 +67,7 @@ class bash(
       if ($default_sh)
       {
         #ifdefined per compatiblitat amb eyp-ntteam
+        # TODO: evaluar la posibilitat de canviar-ho per un which
 
         if (! defined(Package[$bash::params::debconf]))
         {
