@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.11
+
+* added **bash::umask**
+
 ## 0.1.10
 
 * changed header priority for **bash::environment** and **bash::alias**
