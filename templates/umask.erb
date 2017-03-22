@@ -1,8 +1,8 @@
-<% if @user.to_s.empty? -%>
+<% if ! @user.to_s.empty? -%>
 if [ "$(id -un)" == "<%= @user %>" ];
 then
 <% end -%>
-<% if @user.to_s.empty? %>  <% end %>umask <%= @value %>
-<% if @user.to_s.empty? -%>
+<% if ! @user.to_s.empty? %>  <% end %>umask <%= @value %>
+<% if ! @user.to_s.empty? -%>
 fi
 <% end -%>
