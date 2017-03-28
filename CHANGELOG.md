@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.12
+
+* bugfix: allow empty umask.sh
+
 ## 0.1.11
 
 * added **bash::umask**
