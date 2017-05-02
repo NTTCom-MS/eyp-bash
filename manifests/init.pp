@@ -51,6 +51,20 @@ class bash(
     order   => '+00',
   }
 
+  concat { '/etc/profile.d/umask.sh':
+    ensure  => 'present',
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0644',
+    require => Package['bash'],
+  }
+
+  concat::fragment { '/etc/profile.d/umask.sh base':
+    target  => '/etc/profile.d/umask.sh',
+    content => "# environment variables bash\n\n# puppet managed file\n\n",
+    order   => '+00',
+  }
+
   case $::osfamily
   {
     'redhat':
