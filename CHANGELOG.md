@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.13
+
+* bugfix **bash::prompt**
+
 ## 0.1.12
 
 * bugfix: allow empty umask.sh
