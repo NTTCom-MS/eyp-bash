@@ -1,3 +1,4 @@
+# puppet2sitepp @bashaliases
 define bash::alias(
                     $command,
                     $aliasname = $name,
