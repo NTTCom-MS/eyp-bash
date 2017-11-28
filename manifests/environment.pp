@@ -1,3 +1,4 @@
+# puppet2sitepp @bashenvs
 define bash::environment(
                           $value,
                           $envname = $name,
