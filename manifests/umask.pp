@@ -1,3 +1,4 @@
+# puppet2sitepp @bashumasks
 define bash::umask(
                     $value,
                     $user  = $name,

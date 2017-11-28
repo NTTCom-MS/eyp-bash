@@ -1,3 +1,4 @@
+# puppet2sitepp @bashprompts
 define bash::prompt (
                       $ps1  = $name,
                       $user = undef
