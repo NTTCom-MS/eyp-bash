@@ -1,6 +1,6 @@
 {
   "name": "eyp-bash",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "author": "eyp",
   "summary": "profile.d settings (alias, environment variables, prompt and umask) and default shell (/bin/sh) management",
   "license": "Apache-2.0",
@@ -34,7 +34,7 @@
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "14.04", "16.04" ]
+      "operatingsystemrelease": [ "14.04", "16.04", "18.04" ]
     },
     {
       "operatingsystem": "SLES",
