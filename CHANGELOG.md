@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.16
+
+* modified histtimeformat so it no longer have the redirect as a delimiter
+
 ## 0.1.15
 
 * added SLES 12.3 support
