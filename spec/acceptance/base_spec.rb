@@ -31,7 +31,7 @@ describe 'bash class' do
     describe file('/etc/profile.d/history.sh') do
       it { should be_file }
       its(:content) { should match 'puppet managed file' }
-      its(:content) { should match 'HISTTIMEFORMAT="%d%m%y %H%M%S -> "' }
+      its(:content) { should match 'HISTTIMEFORMAT="%d%m%y %H%M%S - "' }
       its(:content) { should match 'HISTFILESIZE="1000000"' }
       its(:content) { should match 'HISTSIZE="1000000"' }
       its(:content) { should match 'HISTCONTROL="ignoredups"' }
