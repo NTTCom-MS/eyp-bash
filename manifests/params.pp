@@ -18,7 +18,7 @@ class bash::params {
         {
           case $::operatingsystemrelease
           {
-            /^1[12].3$/:
+            /^1[12].[34]$/:
             {
               $debconf=undef
             }
