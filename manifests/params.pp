@@ -12,21 +12,7 @@ class bash::params {
     }
     'Suse':
     {
-      case $::operatingsystem
-      {
-        'SLES':
-        {
-          case $::operatingsystemrelease
-          {
-            /^1[12].[34]$/:
-            {
-              $debconf=undef
-            }
-            default: { fail("Unsupported operating system ${::operatingsystem} ${::operatingsystemrelease}") }
-          }
-        }
-        default: { fail("Unsupported operating system ${::operatingsystem}") }
-      }
+      $debconf=undef
     }
     default: { fail('Unsupported OS!')  }
   }
