@@ -14,31 +14,39 @@
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "CentOS",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "Scientific",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "OEL",
-      "operatingsystemrelease": [ "5", "6", "7" ]
+      "operatingsystemrelease": [ "5", "6", "7", "8" ]
     },
     {
       "operatingsystem": "Debian",
-      "operatingsystemrelease": [ "6", "7", "8" ]
+      "operatingsystemrelease": [ "6", "7", "8", "9" ]
     },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [ "14.04", "16.04", "18.04" ]
     },
     {
+      "operatingsystem": "OpenSuSE",
+      "operatingsystemrelease": [ "42", "42.1", "42.2", "42.3" ]
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [ "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" ]
+    },
+    {
       "operatingsystem": "SLES",
-      "operatingsystemrelease": [ "11.3", "12.3", "12.4" ]
+      "operatingsystemrelease": [ "11.3", "12", "12.1", "12.2", "12.3" ]
     }
   ],
   "requirements": [
