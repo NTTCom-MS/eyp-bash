@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.19
+
+* bugfix in prompt template
+
 ## 0.1.18
 
 * Added support for RHEL 8
